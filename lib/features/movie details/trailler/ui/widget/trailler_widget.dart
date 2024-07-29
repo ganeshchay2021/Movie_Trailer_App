@@ -62,7 +62,6 @@ class _TraillerWidgetState extends State<TraillerWidget> {
                     handleColor: Colors.amber,
                   )),
               // RemainingDuration(),
-              FullScreenButton(),
             ],
           ),
           builder: (context, player) {

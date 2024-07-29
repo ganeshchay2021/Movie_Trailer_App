@@ -47,6 +47,7 @@ dependencies:
   readmore: ^2.2.0
   flutter_screenutil: ^5.9.0
   flutter_cache_manager: ^3.3.1
+  flutter_native_splash: ^2.4.1
  
 
 dev_dependencies:
@@ -59,7 +60,15 @@ dev_dependencies:
   # package. See that file for information about deactivating specific lint
   # rules and activating additional ones.
   flutter_lints: ^2.0.0
-  flutter_launcher_icons: "^0.13.1"
+  flutter_launcher_icons: ^0.13.1
+
+flutter_native_splash:
+  color: "#ffffff"
+  image: "assets/images/splashlogo.png"
+  color_dark: "#fcfcca"
+  android: true
+  ios: true
+  web: false
 
 flutter_launcher_icons:
   android: "launcher_icon"

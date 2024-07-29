@@ -37,7 +37,7 @@ class MovieDetailsBody extends StatelessWidget {
                 ),
                 iconSize: 25,
                 color: Colors.white,
-              ), 
+              ),
               actions: [
                 IconButton(
                   onPressed: () {
@@ -54,37 +54,41 @@ class MovieDetailsBody extends StatelessWidget {
               ],
               centerTitle: false,
               pinned: true,
-              expandedHeight: MediaQuery.of(context).size.height * 0.4,
-              flexibleSpace: FlexibleSpaceBar(
-                collapseMode: CollapseMode.parallax,
-                background: BlocBuilder<FetchMovieTraillerCubit, CommonState>(
-                  builder: (context, state) {
-                    if (state is CommonSuccessState<List<TraillerModel>>) {
-                      if (state.item.isEmpty) {
-                        return Center(
-                          child: Text(
-                            "Trailer availabe soon !!",
-                            style: TextStyle(
-                                color: Colors.red.shade400,
-                                fontSize: 20,
-                                letterSpacing: 1),
-                          ),
-                        );
-                      } else {
-                        return TraillerWidget(
-                          traillerId: state.item[0].key!,
-                        );
-                      }
-                    } else {
-                      return const SizedBox();
-                    }
-                  },
-                ),
-              ),
+              // // expandedHeight: MediaQuery.of(context).size.height * 0.4,
+              // flexibleSpace: const FlexibleSpaceBar(
+              //   collapseMode: CollapseMode.parallax,
+              //   // background:
+              // ),
             ),
             SliverList(
               delegate: SliverChildListDelegate(
                 [
+                  SizedBox(
+                    height: MediaQuery.of(context).size.height * 0.4,
+                    child: BlocBuilder<FetchMovieTraillerCubit, CommonState>(
+                      builder: (context, state) {
+                        if (state is CommonSuccessState<List<TraillerModel>>) {
+                          if (state.item.isEmpty) {
+                            return Center(
+                              child: Text(
+                                "Trailer availabe soon !!",
+                                style: TextStyle(
+                                    color: Colors.red.shade400,
+                                    fontSize: 20,
+                                    letterSpacing: 1),
+                              ),
+                            );
+                          } else {
+                            return TraillerWidget(
+                              traillerId: state.item[0].key!,
+                            );
+                          }
+                        } else {
+                          return const SizedBox();
+                        }
+                      },
+                    ),
+                  ),
                   BlocBuilder<FetchMovieDetailsCubit, CommonState>(
                     builder: (context, state) {
                       if (state is CommonSuccessState<MovieDetailsModel>) {
