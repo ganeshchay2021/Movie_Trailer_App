@@ -1,7 +1,7 @@
 # movieapp
 
 In this app I have integeted IMDB Apis and Bloc for state for management. User can watch trailer of movie, 
-They can search any trialer of movie ether they Hollywood, Bollywood and Southindain etc. 
+They can search any trialer of movie ether they Hollywood, Bollywood and Southindain etc.
 
 ## Getting Started
 <img src="https://github.com/user-attachments/assets/2a647ebc-0732-4e6c-9865-aba73273b0a7" alt="Screenshot 3" height="500" style="margin-right: 200px;">
