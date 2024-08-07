@@ -7,7 +7,8 @@ They can search any trialer of movie ether they Hollywood, Bollywood and Southin
 <img src="https://github.com/user-attachments/assets/2a647ebc-0732-4e6c-9865-aba73273b0a7" alt="Screenshot 3" height="500" style="margin-right: 200px;">
  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
   &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 
-<img src="https://github.com/user-attachments/assets/481ddb0d-5be7-40cd-9e6b-f34cf5d0de63" alt="Screenshot 4" height="500">
+  
+  <img src="https://github.com/user-attachments/assets/481ddb0d-5be7-40cd-9e6b-f34cf5d0de63" alt="Screenshot 4" height="500">
 
 <br><br><br><br>.
 
